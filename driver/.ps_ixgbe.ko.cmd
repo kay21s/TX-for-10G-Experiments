@@ -1,0 +1,1 @@
+cmd_/home/kay/io_engine/driver/ps_ixgbe.ko := ld -r -m elf_x86_64 -T /home/backyes/git.linux-2.6.tovard/scripts/module-common.lds   -o /home/kay/io_engine/driver/ps_ixgbe.ko /home/kay/io_engine/driver/ps_ixgbe.o /home/kay/io_engine/driver/ps_ixgbe.mod.o

@@ -1,0 +1,71 @@
+Module                  Size  Used by
+ps_ixgbe              140076  0 
+autofs4                20593  3 
+hidp                   11198  2 
+rfcomm                 27769  0 
+l2cap                  35665  10 hidp,rfcomm
+crc16                   1287  1 l2cap
+bluetooth              48022  5 hidp,rfcomm,l2cap
+rfkill                 13634  1 bluetooth
+lockd                  57489  0 
+sunrpc                157135  2 lockd
+cpufreq_ondemand        7700  8 
+acpi_cpufreq            6245  0 
+freq_table              2731  2 cpufreq_ondemand,acpi_cpufreq
+mperf                   1075  1 acpi_cpufreq
+iptable_filter          1320  0 
+ip_tables              13032  1 iptable_filter
+ip6t_REJECT             2340  1 
+xt_tcpudp               2271  6 
+ip6table_filter         1292  1 
+ip6_tables             14161  1 ip6table_filter
+x_tables               13946  6 iptable_filter,ip_tables,ip6t_REJECT,xt_tcpudp,ip6table_filter,ip6_tables
+loop                   12777  0 
+dm_mirror              11190  0 
+dm_multipath           13811  0 
+scsi_dh                 4496  1 dm_multipath
+video                  11527  0 
+output                  1644  1 video
+sbs                     5815  0 
+sbshc                   3332  1 sbs
+power_meter             8010  0 
+hwmon                   1321  1 power_meter
+battery                 5766  0 
+acpi_memhotplug         4043  0 
+ac                      2304  0 
+power_supply            7651  3 sbs,battery,ac
+ipv6                  227739  51 ip6t_REJECT
+parport_pc             19458  0 
+lp                      8616  0 
+parport                26935  2 parport_pc,lp
+sg                     24591  0 
+joydev                  9044  0 
+igb                    85613  0 
+mdio                    3000  0 
+option                 15706  0 
+usb_wwan                7316  1 option
+usbserial              26042  2 option,usb_wwan
+tpm_tis                 7128  0 
+rtc_cmos                7870  0 
+rtc_core               10981  1 rtc_cmos
+rtc_lib                 1673  1 rtc_core
+tpm                     9501  1 tpm_tis
+tpm_bios                4792  1 tpm
+button                  4698  0 
+pcspkr                  1715  0 
+shpchp                 22368  0 
+i2c_i801                7198  0 
+i2c_core               15411  1 i2c_i801
+dm_region_hash          5980  1 dm_mirror
+dm_log                  7567  2 dm_mirror,dm_region_hash
+dm_mod                 54305  3 dm_mirror,dm_multipath,dm_log
+usb_storage            39201  0 
+ata_piix               20998  4 
+libata                143002  1 ata_piix
+sd_mod                 24657  5 
+scsi_mod              154759  5 scsi_dh,sg,usb_storage,libata,sd_mod
+ext3                  106258  3 
+jbd                    35307  1 ext3
+uhci_hcd               17646  0 
+ohci_hcd               18016  0 
+ehci_hcd               31042  0 
